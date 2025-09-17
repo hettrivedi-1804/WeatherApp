@@ -1,50 +1,54 @@
-# Welcome to your Expo app 👋
+Here’s a tailored **README.md** for your Expo Weather App that explains setup, usage, and how the app works:
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+---
 
-## Get started
+# 🌦️ Weather App (Expo)
 
-1. Install dependencies
+A simple weather application built with [Expo](https://expo.dev) and React Native.
+Users can enter a **city name** to fetch and display real-time weather data using a weather API.
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## 🚀 Features
 
-   ```bash
-   npx expo start
-   ```
+* Search for weather by city name
+* Displays temperature, weather condition, and additional details
+* Clean and minimal UI
+* Runs on **Android**, **iOS**, and **Web** via Expo
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 📦 Getting Started
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+### 1. Install dependencies
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Start the app
 
-## Learn more
+```bash
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+You can run the app on:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+* **Expo Go** (scan QR code)
+* **iOS Simulator**
+* **Android Emulator**
+* **Web Browser**
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## 🔑 API Setup
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This app uses a weather API (e.g., [OpenWeatherMap](https://openweathermap.org/api)).
+
+1. Create a free account and get your **API key**.
+2. Create a `.env` file in the root of your project:
+
+   ```env
+   WEATHER_API_KEY=your_api_key_here
+   ```
+3. In your code, load the key with [expo-constants](https://docs.expo.dev/versions/latest/sdk/constants/) or [react-native-dotenv](https://www.npmjs.com/package/react-native-dotenv).
